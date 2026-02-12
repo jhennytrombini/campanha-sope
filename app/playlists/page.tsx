@@ -20,7 +20,7 @@ const playlists = [
 
 export default function Playlist() {
   return (
-    <main className="min-h-screen bg-red-600 text-white p-8">
+    <main className="min-h-screen text-white p-8">
       <h1 className="text-4xl font-bold text-center mb-10">
         Playlists da Campanha 🎵💜
       </h1>
