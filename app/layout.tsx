@@ -23,7 +23,7 @@ export default function RootLayout({
               <a href="/" className="hover:underline">Home</a>
               <a href="/doacao" className="hover:underline">Doação de Sangue</a>
               <a href="/playlists" className="hover:underline">Playlists</a>
-              <a href="/cronograma" className="hover:underline">Faça Parte</a>
+              <a href="/faca-parte" className="hover:underline">Faça Parte</a>
             </div>
           </nav>
         </header>
