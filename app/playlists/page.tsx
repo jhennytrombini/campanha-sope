@@ -18,18 +18,29 @@ const playlists = [
   },
 ];
 
-export default function Playlist() {
+export default function Playlists() {
   return (
-    <main className="min-h-screen text-white p-8">
-      <h1 className="text-4xl font-bold text-center mb-10">
-        Playlists da Campanha 🎵💜
-      </h1>
+    <main className="min-h-screen px-8 py-16">
 
+      {/* Título + Texto */}
+      <div className="max-w-3xl mx-auto text-center mb-12">
+        <h1 className="text-4xl font-bold mb-4">
+          Playlists Oficiais 🎵💜
+        </h1>
+
+        <p className="text-lg text-gray-600">
+          Escute, compartilhe e fortaleça nossa campanha através das
+          playlists oficiais. Cada stream ajuda a ampliar o alcance
+          e mostrar a força do nosso fandom 💜
+        </p>
+      </div>
+
+      {/* Cards */}
       <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
         {playlists.map((playlist) => (
           <div
             key={playlist.nome}
-            className="bg-white text-black rounded-2xl shadow-lg p-4 flex flex-col items-center hover:scale-105 transition"
+            className="bg-white rounded-2xl shadow-lg p-6 flex flex-col items-center hover:scale-105 transition"
           >
             <div className="relative w-60 h-60 mb-4">
               <Image
@@ -48,13 +59,14 @@ export default function Playlist() {
               href={playlist.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 bg-green-500 text-white px-4 py-2 rounded-full hover:bg-green-600 transition"
+              className="flex items-center gap-2 bg-[#1DB954] text-white px-4 py-2 rounded-full hover:opacity-90 transition"
             >
               🎵 Ouvir no Spotify
             </a>
           </div>
         ))}
       </div>
+
     </main>
   );
 }
