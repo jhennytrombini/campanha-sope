@@ -16,32 +16,32 @@ export default function RootLayout({
       <body className="min-h-screen flex flex-col bg-[#D8C8FF] text-purple-900">
 
         {/* Header */}
-        <header className="w-full bg-[#C7B3F5]">
+        <header className="w-full bg-[#C7B3F5] shadow-sm">
           <nav className="max-w-6xl mx-auto px-4 py-4">
-  <div className="flex flex-wrap justify-center md:justify-end gap-3 md:gap-6 text-xs md:text-sm font-medium text-purple-900">
-    
-    <Link href="/" className="hover:underline">
-      Home
-    </Link>
+            <div className="flex flex-wrap justify-center md:justify-end gap-3 md:gap-6 text-xs md:text-sm font-medium text-purple-900">
+              
+              <Link href="/" className="hover:underline">
+                Home
+              </Link>
 
-    <Link href="/doacao" className="hover:underline">
-      Doação de Sangue
-    </Link>
+              <Link href="/doacao" className="hover:underline">
+                Doação de Sangue
+              </Link>
 
-    <Link href="/playlists" className="hover:underline">
-      Playlists
-    </Link>
+              <Link href="/playlists" className="hover:underline">
+                Playlists
+              </Link>
 
-    <Link href="/faca-parte" className="hover:underline">
-      Faça Parte
-    </Link>
+              <Link href="/faca-parte" className="hover:underline">
+                Faça Parte
+              </Link>
 
-  </div>
-</nav>
+            </div>
+          </nav>
         </header>
 
         {/* Conteúdo */}
-        <main className="flex-1 w-full">
+        <main className="flex-1 w-full bg-[#C7B3F5]">
           {children}
         </main>
 
