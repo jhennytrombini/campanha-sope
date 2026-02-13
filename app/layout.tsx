@@ -32,6 +32,10 @@ export default function RootLayout({
                 Playlists
               </Link>
 
+              <Link href="/quiz" className="hover:underline">
+                Quiz
+              </Link>
+
               <Link href="/faca-parte" className="hover:underline">
                 Faça Parte
               </Link>
